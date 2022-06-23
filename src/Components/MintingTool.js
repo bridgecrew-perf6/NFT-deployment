@@ -2,11 +2,29 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Form, Button, Card, Container, Row, Alert } from "react-bootstrap";
 import { keys } from "regenerator-runtime";
+
 const BN = require("bn.js");
 
 const MintingTool = (props) => {
   const mintNFT = async () => {
-    console.log("add contract function call here ");
+    await window.contract.nft_mint(
+      {
+        token_id:`${window.accountId}-go-team-token`,
+        metadata: {
+          title:"My non Fungible Team Token",
+          description:"The Team Most Certainly Goes",
+          media:"https://bafybeiftczwrtyr3k7a2k4vutd3amkwsmaqyhrdzlhvpt33dyjivufqusq.ipfs.dweb.link/goteam-gif.gif"
+          // media:'https://tenor.com/view/bayc-bored-ape-yacht-club-bored-ape-yacht-bored-apes-bored-ape-gif-23881773'
+          // media:"https://tenor.com/bMmT3.gif",
+          // media:"https://tenor.com/view/bored-ape-yacht-club-nft-cool-nfts-gif-23884160",
+          
+
+        },
+        receiver_id:window.accountId,
+      },
+      300000000000000, // attached the Gas
+      new BN("9440000000000000000000 ") // this is for storage
+    );
   };
 
   return (
@@ -14,7 +32,7 @@ const MintingTool = (props) => {
       <Container>
         <Row style={{ marginBottom: "2vh" }}>
           <p>
-              After you have logged in, hit this button to mint your "Go
+            Step 2: After you have logged in, hit this button to mint your "Go
             Team" Token and go your{" "}
             <a href='https://wallet.testnet.near.org/'> wallet</a> and see your
             NFT
