@@ -2,7 +2,7 @@ nft-mint
 ==================
 
 
-Github feedback - readme.md file missing your project description, also name of smart contracts used, methods in smart contracts, steps to add nft to near wallet etc. Remove description like "This React app was initialized with create-near-app"
+<!-- Github feedback - readme.md file missing your project description, also name of smart contracts used, methods in smart contracts, steps to add nft to near wallet etc. Remove description like "This React app was initialized with create-near-app" -->
 
 project description
 ===================
