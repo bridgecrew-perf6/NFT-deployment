@@ -1,4 +1,4 @@
-nft-mint-frontend
+nft-mint
 ==================
 
 This [React] app was initialized with [create-near-app]
