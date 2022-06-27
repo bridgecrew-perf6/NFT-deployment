@@ -109,3 +109,8 @@ step 3: At the below there is MINT NFT Button to click we will Mint nft to our a
 step 4 : we have to https://near.wallet.tesnet.org in this page we can see out NFT.
 
 
+loom video link : 
+
+https://www.loom.com/share/ba11b6bb03cc43d58954fd5400934176
+
+
