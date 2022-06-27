@@ -1,98 +1,20 @@
-nft-mint
+NFT Deployment
 ==================
 
 
-<!-- Github feedback - readme.md file missing your project description, also name of smart contracts used, methods in smart contracts, steps to add nft to near wallet etc. Remove description like "This React app was initialized with create-near-app" -->
-
 project description
 ===================
-This app allows users to login and logout and Mint their NFT's into the Near wallet by once.
+. This NFT Deployment is a NEAR Blockchain Based DApp which includes Deploying of NFT's.
+. This Near NFT Deployment dApp it Consisits of a Smart Contracts its written in Assembly Script.
+. Ultimately, the purpose of this project was to build a simple contract to explore how user can login into  an account and deploy their NFT into their Acoount. 
 
-smart contracts --baackend
+smart contracts --backend
 ============================= 
 I developed this app through the rust smart contracts.
 
 Frontend
 ========
 For fronted I used Reactjs through config.js file I'm connecting the Rust backend and fetching smart contract calls to the frontend.
-
-
-
-Quick Start
-===========
-
-To run this project locally:
-
-1. Prerequisites: Make sure you've installed [Node.js] ≥ 12
-2. Install dependencies: `yarn install`
-3. Run the local development server: `yarn dev` (see `package.json` for a
-   full list of `scripts` you can run with `yarn`)
-
-Now you'll have a local development environment backed by the NEAR TestNet!
-
-Go ahead and play with the app and the code. As you make code changes, the app will automatically reload.
-
-
-Exploring The Code
-==================
-
-1. The "backend" code lives in the `/contract` folder. See the README there for
-   more info.
-2. The frontend code lives in the `/src` folder. `/src/index.html` is a great
-   place to start exploring. Note that it loads in `/src/index.js`, where you
-   can learn how the frontend connects to the NEAR blockchain.
-3. Tests: there are different kinds of tests for the frontend and the smart
-   contract. See `contract/README` for info about how it's tested. The frontend
-   code gets tested with [jest]. You can run both of these at once with `yarn
-   run test`.
-
-
-
-Step 0: Install near-cli (optional)
--------------------------------------
-
-[near-cli] is a command line interface (CLI) for interacting with the NEAR blockchain. It was installed to the local `node_modules` folder when you ran `yarn install`, but for best ergonomics you may want to install it globally:
-
-    yarn install --global near-cli
-
-Or, if you'd rather use the locally-installed version, you can prefix all `near` commands with `npx`
-
-Ensure that it's installed with `near --version` (or `npx near --version`)
-
-
-Step 1: Create an account for the contract
-------------------------------------------
-
-Each account on NEAR can have at most one contract deployed to it. If you've already created an account such as `your-name.testnet`, you can deploy your contract to `nft-mint-frontend.your-name.testnet`. Assuming you've already created an account on [NEAR Wallet], here's how to create `nft-mint-frontend.your-name.testnet`:
-
-1. Authorize NEAR CLI, following the commands it gives you:
-
-      near login
-
-2. Create a subaccount (replace `YOUR-NAME` below with your actual account name):
-
-      near create-account nft-mint-frontend.YOUR-NAME.testnet --masterAccount YOUR-NAME.testnet
-
-
-Step 2: set contract name in code
----------------------------------
-
-Modify the line in `src/config.js` that sets the account name of the contract. Set it to the account id you used above.
-
-    const CONTRACT_NAME = process.env.CONTRACT_NAME || 'nft-mint-frontend.YOUR-NAME.testnet'
-
-
-Step 3: deploy!
----------------
-
-One command:
-
-    yarn deploy
-
-As you can see in `package.json`, this does two things:
-
-1. builds & deploys smart contract to NEAR TestNet
-2. builds & deploys frontend code to GitHub using [gh-pages]. This will only work if the project already has a repository set up on GitHub. Feel free to modify the `deploy` script in `package.json` to deploy elsewhere.
 
 
 
@@ -177,12 +99,13 @@ simply run 'Yarn && Yarn build' to run a build script located in nft-contract/bu
 this will compile our smart contracts into a .wasm file which appear in the out/main.wasm folder
 
 
+Screenshot from 2022-06-27 09-03-23.png
+
 App Functionally
 ================
 step 1: we have go the localhost:1234 there is App Login Button 
 step 2: we have login with our near wallet sign in our near near.testnet account
 step 3: At the below there is MINT NFT Button to click we will Mint nft to our account
 step 4 : we have to https://near.wallet.tesnet.org in this page we can see out NFT.
-
 
 
