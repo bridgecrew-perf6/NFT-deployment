@@ -99,7 +99,7 @@ simply run 'Yarn && Yarn build' to run a build script located in nft-contract/bu
 this will compile our smart contracts into a .wasm file which appear in the out/main.wasm folder
 
 
-https://user-images.githubusercontent.com/101166042/175855709-75963a90-7156-40f0-9b2a-c56cbc903e28.png
+![](images/user1.png)
 
 App Functionally
 ================
