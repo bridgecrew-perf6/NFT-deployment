@@ -94,7 +94,7 @@ Looking at these data structures, the minting function should do the following:
 - This will compile our smart contracts into a .wasm file which appear in the out/main.wasm folder
 
 
-- ![nft.png](./src/assets/nft.png)
+ ![nft.png](./src/assets/nft.png)
 
 ## App Functionally
 
